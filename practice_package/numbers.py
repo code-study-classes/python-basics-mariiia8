@@ -15,4 +15,4 @@ def round_to_multiple(number, multiple):
 
 
 def calculate_rect_area(x1, y1, x2, y2):
-    return abs(x2 - x1) * abs(y2 - y1) # type: ignore
+    return abs(x2 - x1) * abs(y2 - y1)  # type: ignore

@@ -11,10 +11,10 @@ def get_discount(amount):
     else:
         return 0.0
 
+
 def describe_number(n):
     parity = "четное" if n % 2 == 0 else "нечетное"
     
-
     abs_n = abs(n)
     if 0 <= abs_n <= 9:
         digit = "однозначное"
@@ -62,7 +62,6 @@ def describe_age(age):
         9: "девять"
     }
     
-
     if age % 10 == 0 or age in [11, 12, 13, 14]:
         word = tens[age // 10] + " лет"
     elif 5 <= age % 10 <= 9 or age % 10 == 0:

@@ -6,12 +6,14 @@ def find_common_elements(set1, set2):
             common.add(item)
     return common
 
+
 # Задача 2
 def is_superset(set_a, set_b):
     for item in set_b:
         if item not in set_a:
             return False
     return True
+
 
 # Задача 3
 def remove_duplicates(items):
@@ -23,10 +25,12 @@ def remove_duplicates(items):
             result.append(item)
     return result
 
+
 # Задача 4
 def count_unique_words(text):
     words = text.lower().split()
     return len(set(words))
+
 
 # Задача 5
 def find_shared_items(*sets):

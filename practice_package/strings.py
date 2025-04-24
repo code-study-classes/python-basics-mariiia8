@@ -3,6 +3,7 @@ def extract_file_name(full_file_name):
     filename = full_file_name.replace('\\', '/').split('/')[-1]
     return filename.rsplit('.', 1)[0] if '.' in filename else filename
 
+
 # Задача 2
 def encrypt_sentence(sentence):
     even_chars = []
@@ -13,6 +14,7 @@ def encrypt_sentence(sentence):
         else:
             odd_chars.append(char)
     return ''.join(even_chars) + ''.join(reversed(odd_chars))
+
 
 # Задача 3
 def check_brackets(expression):
@@ -26,10 +28,12 @@ def check_brackets(expression):
             stack.pop()
     return -1 if stack else 0
 
+
 # Задача 4
 def reverse_domain(domain):
     parts = domain.split('.')
     return '.'.join(reversed(parts))
+
 
 # Задача 5
 def count_vowel_groups(word):

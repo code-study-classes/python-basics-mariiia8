@@ -6,6 +6,7 @@ def count_char_occurrences(text):
             result[char] = result.get(char, 0) + 1
     return result
 
+
 # Задача 2
 def merge_dicts(dict1, dict2, conflict_resolver):
     merged = dict1.copy()
@@ -15,6 +16,7 @@ def merge_dicts(dict1, dict2, conflict_resolver):
         else:
             merged[key] = value
     return merged
+
 
 # Задача 3
 def invert_dictionary(original_dict):
@@ -28,6 +30,7 @@ def invert_dictionary(original_dict):
         else:
             inverted[value] = [key]
     return inverted
+
 
 # Задача 4
 def dict_to_table(data_dict, columns):
@@ -60,6 +63,7 @@ def dict_to_table(data_dict, columns):
     ]
     
     return "\n".join([header_line, separator_line] + data_lines)
+
 
 # Задача 5
 def deep_update(base_dict, update_dict):
