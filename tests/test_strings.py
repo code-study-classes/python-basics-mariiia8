@@ -1,6 +1,6 @@
-import pytest
+import pytest  # type: ignore
 
-from practice_package.strings import (
+from practice_package.strings import (  # type: ignore
     check_brackets,
     count_vowel_groups,
     encrypt_sentence,
@@ -15,7 +15,9 @@ class TestStringsFunctions:
         ('C:/Users/example.txt', 'example'),
         ('../index.html', 'index'),
         ('/home/user/photo.jpg', 'photo'),
-        ('archive.tar.gz', 'archive') 
+        ('archive.tar.gz', 'archive.tar'),
+        ('no_extension', 'no_extension'),
+        ('.hidden_file', '.hidden_file')
     ], ids=["windows_path", "relative_path", "unix_path", 
             "double_extension", "no_extension", "hidden_file"])
     def test_extract_file_name(self, path, expected):
